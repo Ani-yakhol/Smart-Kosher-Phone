@@ -1,0 +1,542 @@
+/* ══════════════════════════════════════════════════════════
+   Smart Kosher Phone — Light Theme (v1.0)
+   Modern flat design: soft neutral surfaces, a single blue
+   accent, rounded corners, and clear state feedback.
+   ══════════════════════════════════════════════════════════ */
+
+* {
+    outline: none;
+}
+
+QWidget {
+    background: transparent;
+    color: #1F2733;
+    font-family: "Segoe UI";
+    selection-background-color: #1976D2;
+    selection-color: #FFFFFF;
+}
+
+#centralWidget, #pageStack, QMainWindow {
+    background: #F3F5F9;
+}
+
+QToolTip {
+    background: #1F2733;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* ── Scrollbars ───────────────────────────────────────── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical {
+    background: #C7CDD7;
+    border-radius: 5px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover { background: #A9B1BE; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar:horizontal { height: 0; }
+
+/* ── Top status bar ───────────────────────────────────── */
+#statusBar {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E8EE;
+}
+#btDot { color: #B0B4BA; }
+#btDotConnected { color: #2FA84F; }
+#btStatus { color: #4A5568; font-weight: 600; }
+#simBadge {
+    background: #FFF3CD;
+    color: #8A6D00;
+    border: 1px solid #F0D888;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-weight: 700;
+}
+#statusMsg { color: #647089; }
+#themeToggleBtnBar {
+    background: #F0F2F6;
+    border: 1px solid #E0E4EA;
+    border-radius: 15px;
+    padding: 4px 14px;
+    color: #33404F;
+    font-weight: 600;
+}
+#themeToggleBtnBar:hover { background: #E5E9F0; }
+#themeToggleBtnBar:pressed { background: #DBE0E8; }
+QStatusBar#mainStatusBar {
+    background: #FFFFFF;
+    color: #7A8496;
+    border-top: 1px solid #E4E8EE;
+}
+
+/* ── Side navigation ──────────────────────────────────── */
+#sideNav {
+    background: #16233A;
+}
+#sideNavLogo { background: transparent; }
+#sideNavAppName { color: #FFFFFF; }
+#sideNavVersion { color: #7C8CAC; }
+#sideNavDivider { background: #253652; max-height: 1px; }
+#sideNavVDivider { background: #E4E8EE; max-width: 1px; }
+#sideNavBtnArea { background: transparent; }
+#sideNavFooter { color: #566E92; }
+
+#sideNavBtn {
+    background: transparent;
+    color: #B7C2D6;
+    border: none;
+    border-radius: 9px;
+    padding: 0 14px;
+    text-align: left;
+    font-weight: 500;
+}
+#sideNavBtn:hover {
+    background: #1E2E4A;
+    color: #FFFFFF;
+}
+#sideNavBtn:checked {
+    background: #1976D2;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#sideNavBadge {
+    background: #EF5350;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/* ── Page toggle header (on/off switch bar) ──────────── */
+#pageToggleHeader {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E8EE;
+}
+#pageToggleTitle { color: #1F2733; }
+#pageToggleDivider { background: transparent; }
+
+/* ── Generic page chrome ──────────────────────────────── */
+#pageTitle {
+    color: #16233A;
+    font-weight: 800;
+    padding: 4px 0 2px 0;
+}
+#pageHeader {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E8EE;
+}
+#sectionLabel { color: #4A5568; font-weight: 700; }
+#infoLabel { color: #7A8496; }
+#hintLabel { color: #9AA3B2; }
+
+/* ── Tabs ─────────────────────────────────────────────── */
+QTabWidget::pane {
+    border: none;
+    background: transparent;
+}
+QTabBar {
+    background: #FFFFFF;
+}
+QTabBar::tab {
+    background: transparent;
+    color: #7A8496;
+    padding: 10px 18px;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    margin: 0 2px;
+}
+QTabBar::tab:hover {
+    color: #1976D2;
+}
+QTabBar::tab:selected {
+    color: #1976D2;
+    border-bottom: 3px solid #1976D2;
+}
+#subTabsNorth::pane, #callTabs::pane, #deviceSubTabs::pane {
+    border-top: 1px solid #E4E8EE;
+    background: #F3F5F9;
+}
+
+/* ── Buttons ──────────────────────────────────────────── */
+QPushButton {
+    background: #F0F2F6;
+    color: #33404F;
+    border: 1px solid #E0E4EA;
+    border-radius: 9px;
+    padding: 7px 14px;
+    font-weight: 600;
+}
+QPushButton:hover { background: #E5E9F0; }
+QPushButton:pressed { background: #D9DEE6; }
+QPushButton:disabled { color: #B7BEC9; background: #F5F6F8; border-color: #ECEFF3; }
+
+#primaryButton {
+    background: #1976D2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+#primaryButton:hover { background: #1E88E5; }
+#primaryButton:pressed { background: #1565C0; }
+#primaryButton:disabled { background: #B9D3EF; color: #EAF2FC; }
+
+#secondaryButton {
+    background: #FFFFFF;
+    color: #1976D2;
+    border: 1.5px solid #1976D2;
+    border-radius: 10px;
+    font-weight: 700;
+}
+#secondaryButton:hover { background: #EAF2FC; }
+#secondaryButton:pressed { background: #D9E9FA; }
+
+#smallButton {
+    background: #EDF3FC;
+    color: #1565C0;
+    border: 1px solid #CFE1F7;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-weight: 600;
+}
+#smallButton:hover { background: #DCEAFA; }
+
+#actionButton {
+    background: #F0F2F6;
+    border: 1px solid #E0E4EA;
+    border-radius: 27px;
+}
+#actionButton:hover { background: #E5E9F0; }
+
+#dialCallButton {
+    background: #2FA84F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 27px;
+}
+#dialCallButton:hover { background: #37B85A; }
+#dialCallButton:pressed { background: #278F43; }
+
+#answerButton {
+    background: #2FA84F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 41px;
+}
+#answerButton:hover { background: #37B85A; }
+
+#rejectButton, #hangupButton {
+    background: #E5484D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 41px;
+}
+#rejectButton:hover, #hangupButton:hover { background: #EF5350; }
+
+#vmRouteButton {
+    background: #1976D2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 31px;
+}
+
+#callControlBtn {
+    background: #FFFFFF;
+    color: #33404F;
+    border: 1px solid #E4E8EE;
+    border-radius: 12px;
+    font-weight: 600;
+}
+#callControlBtn:hover { background: #F3F5F9; }
+#callControlBtn:checked {
+    background: #1976D2;
+    color: #FFFFFF;
+    border-color: #1976D2;
+}
+
+#dtmfButton {
+    background: #F0F2F6;
+    color: #1F2733;
+    border: 1px solid #E0E4EA;
+    border-radius: 9px;
+    font-weight: 700;
+}
+#dtmfButton:hover { background: #E5E9F0; }
+
+#dialButton {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    border-radius: 12px;
+}
+#dialButton:hover { background: #F6F8FB; border-color: #C7D3E3; }
+#dialButton:pressed { background: #EAF2FC; }
+#dialDigit { color: #16233A; font-size: 20px; font-weight: 700; }
+#dialSub { color: #9AA3B2; font-size: 9px; }
+#dialPad { background: transparent; }
+
+#playBtn {
+    background: #1976D2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 19px;
+}
+#playBtn:hover { background: #1E88E5; }
+
+#primaryStarBtn {
+    background: transparent;
+    border: none;
+    color: #F2B705;
+    font-size: 16px;
+}
+#removeDeviceBtn {
+    background: transparent;
+    border: none;
+    color: #C7CDD7;
+    border-radius: 14px;
+}
+#removeDeviceBtn:hover { background: #FBEAEA; color: #E5484D; }
+
+#contactDialBtn {
+    background: #EAF6EC;
+    border: none;
+    border-radius: 20px;
+    color: #2FA84F;
+}
+#contactDialBtn:hover { background: #D8EFDB; }
+
+/* ── Cards / panels ───────────────────────────────────── */
+#connectedBanner, #playbackBar, #chatHeader, #dtmfPad,
+#callControls, #blacklistFrame {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    border-radius: 12px;
+}
+#connectedBanner { background: #EAF6EC; border-color: #C7E9CC; }
+#bannerText { color: #1E7D34; font-weight: 700; }
+
+#msgInputBar {
+    background: #FFFFFF;
+    border-top: 1px solid #E4E8EE;
+}
+#msgInput {
+    background: #F3F5F9;
+    border: 1px solid #E4E8EE;
+    border-radius: 14px;
+    padding: 8px 12px;
+    color: #1F2733;
+}
+#msgLeftPanel {
+    background: #FFFFFF;
+    border-right: 1px solid #E4E8EE;
+}
+#msgRightPanel { background: #F3F5F9; }
+#chatView, #chatContent { background: transparent; }
+#typingIndicator { color: #1976D2; font-style: italic; }
+
+/* Chat bubbles */
+#msgCardMine {
+    background: #1976D2;
+    border-radius: 15px;
+}
+#msgCardMine QLabel#msgText { color: #FFFFFF; }
+#msgCardMine QLabel#msgMeta { color: #D6E8FA; }
+
+#msgCardOther {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    border-radius: 15px;
+}
+#msgCardOther QLabel#msgText { color: #1F2733; }
+#msgCardOther QLabel#msgMeta { color: #9AA3B2; }
+
+/* ── Settings / forms ─────────────────────────────────── */
+#settingsScroll, #settingsContent { background: transparent; border: none; }
+#settingsGroup {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    border-radius: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    color: #16233A;
+}
+#settingsGroup::title {
+    subcontrol-origin: margin;
+    left: 14px;
+    padding: 0 6px;
+    color: #1976D2;
+}
+
+QLineEdit, QTextEdit, #searchInput, #numberDisplay, #msgInput {
+    background: #FFFFFF;
+    border: 1.5px solid #E0E4EA;
+    border-radius: 9px;
+    padding: 7px 10px;
+    color: #1F2733;
+}
+QLineEdit:focus, QTextEdit:focus { border-color: #1976D2; }
+
+QComboBox, #filterCombo {
+    background: #FFFFFF;
+    border: 1.5px solid #E0E4EA;
+    border-radius: 9px;
+    padding: 6px 10px;
+    color: #1F2733;
+}
+QComboBox:hover { border-color: #C7D3E3; }
+QComboBox::drop-down { border: none; width: 24px; }
+QComboBox QAbstractItemView {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    selection-background-color: #EAF2FC;
+    selection-color: #1976D2;
+    outline: none;
+}
+
+QCheckBox { color: #33404F; spacing: 8px; }
+QCheckBox::indicator {
+    width: 18px; height: 18px;
+    border: 1.5px solid #C7CDD7;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+QCheckBox::indicator:checked {
+    background: #1976D2;
+    border-color: #1976D2;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    background: #E0E4EA;
+    border-radius: 2px;
+}
+QSlider::sub-page:horizontal {
+    background: #1976D2;
+    border-radius: 2px;
+}
+QSlider::handle:horizontal {
+    background: #FFFFFF;
+    border: 2px solid #1976D2;
+    width: 16px; height: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+}
+
+QSpinBox, QDoubleSpinBox {
+    background: #FFFFFF;
+    border: 1.5px solid #E0E4EA;
+    border-radius: 8px;
+    padding: 4px 6px;
+}
+
+QProgressBar {
+    background: #E4E8EE;
+    border: none;
+    border-radius: 2px;
+}
+QProgressBar::chunk { background: #1976D2; border-radius: 2px; }
+
+QDialog { background: #F3F5F9; }
+QDialogButtonBox QPushButton { min-width: 80px; }
+
+/* ── Lists ────────────────────────────────────────────── */
+QListWidget {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+QListWidget::item {
+    background: #FFFFFF;
+    border: 1px solid #E4E8EE;
+    border-radius: 10px;
+    margin: 2px 0;
+}
+QListWidget::item:selected {
+    background: #EAF2FC;
+    border-color: #9EC5EE;
+}
+QListWidget::item:hover { background: #F6F8FB; }
+#smallList::item { border-radius: 6px; }
+
+/* ── Recording / voicemail / log rows ────────────────── */
+#recBadge, #logStats, #vmStats {
+    color: #7A8496;
+    font-weight: 600;
+}
+#recIndicator { color: #E5484D; font-weight: 700; }
+#logName { font-weight: 700; }
+#logNumber, #logDate, #logDirLabel { color: #9AA3B2; }
+#contactName, #vmName, #recName { color: #16233A; }
+#contactAvatar {
+    background: #EAF2FC;
+    color: #1976D2;
+    border-radius: 21px;
+}
+
+/* ── Devices page ─────────────────────────────────────── */
+#deviceName, #deviceNameEdit { color: #16233A; font-weight: 700; }
+#deviceNameEdit {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px dashed transparent;
+    padding: 0;
+}
+#deviceNameEdit:focus { border-bottom-color: #1976D2; }
+#deviceAddr, #deviceNumber { color: #9AA3B2; }
+#deviceStatus { color: #2FA84F; font-weight: 700; }
+
+/* ── Popup (incoming call) ────────────────────────────── */
+#popupCard {
+    background: #FFFFFF;
+    border-radius: 18px;
+}
+#popupTypeLabel { color: #1976D2; }
+#popupName { color: #16233A; }
+#popupNumber { color: #7A8496; }
+#popupSep { background: #E4E8EE; max-height: 1px; }
+#popupBtnLabel { color: #7A8496; }
+#popupAvatar {
+    background: #EAF2FC;
+    border-radius: 34px;
+}
+
+/* ── Stub pages ───────────────────────────────────────── */
+#stubTitle { color: #16233A; }
+#stubBadge {
+    color: #1976D2;
+    background: #EAF2FC;
+    border-radius: 12px;
+    padding: 4px 14px;
+}
+#stubDesc { color: #7A8496; }
+#stubSep { background: #E4E8EE; max-height: 1px; }
+
+/* ── Active call screen ───────────────────────────────── */
+#callAvatar, #incomingAvatar {
+    background: #EAF2FC;
+    border-radius: 48px;
+}
+#callName, #incomingName { color: #16233A; }
+#callNumber, #incomingNumber { color: #7A8496; }
+#callStatus { color: #1976D2; font-weight: 700; }
+#callTimer { color: #16233A; }
+#idleLabel { color: #4A5568; }
+#ringLabel { color: #1976D2; }
+#incomingLabel { color: #1976D2; }
+#btnLabel { color: #7A8496; }
+
+/* ── Toggle page status text ──────────────────────────── */
+#pageToggleStatus { font-weight: 700; }
+
+/* ── About page ───────────────────────────────────────── */
+#aboutTitle { color: #16233A; }
+#aboutVersion, #aboutTagline { color: #7A8496; }
+#aboutSep { background: #E4E8EE; max-height: 1px; }
+#aboutTech, #aboutCredits, #aboutFooter { color: #7A8496; }
+#creditsTitle { color: #1976D2; }

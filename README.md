@@ -122,10 +122,3 @@ pyinstaller --onedir --windowed --name SmartKosherPhone ^
 
 כל לשונית (מלבד מכשירים, הגדרות ואודות) כוללת מתג הפעלה/כיבוי בראשה.
 
-
-# תמונות 
-
-
-<img width="1080" height="768" alt="ניהול פלאפון כשר חכם 1" src="https://github.com/user-attachments/assets/9f620506-d57d-4d8a-87e3-98ee6d205507" />
-<img width="344" height="265" alt="ניהול פלאפון כשר חכם 2" src="https://github.com/user-attachments/assets/b039b69c-4e55-4cd0-bbab-046ae10e1370" />
-<img width="1079" height="768" alt="ניהול פלאפון כשר חכם 3" src="https://github.com/user-attachments/assets/2e4acc33-3ba7-4430-a08f-082c8fba9b5e" />
